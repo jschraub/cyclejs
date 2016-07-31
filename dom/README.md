@@ -185,6 +185,13 @@ as:
 div('.myClass', {style: {color: 'red'}}, [])
 ```
 
+Attributes can also be added via the `optionalData` with the `attrs` property.
+An example to create a range input element would be created as follows:
+
+```js
+input('.myInput', {attrs: {type: 'range', min: 40, max: 70, value: 50}})
+```
+
 There are also SVG helper functions, which apply the appropriate SVG
 namespace to the resulting elements. `svg()` function creates the top-most
 SVG element, and `svg.g`, `svg.polygon`, `svg.circle`, `svg.path` are for
